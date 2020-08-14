@@ -1,0 +1,52 @@
+/* Signs about us */
+.about-us{
+    padding-top: 94px;
+    padding-bottom: 47px; 
+}
+
+.section{
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;   
+}
+
+.section-list:not(:last-child){
+    margin-right: 30px;
+}
+
+.section-title{
+    color:var(--title-text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;  
+}
+
+.discription{
+    font-weight: normal;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-us-svg{
+    width: 70px;
+    height: 70px;
+}
+
+.section-list-div{
+    height: 120px;
+    width: 270px;
+    background-color:var(--secondary-bg-color);
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.about-us-svg:hover{
+    fill:var(--accent-color);
+}
+
+
+

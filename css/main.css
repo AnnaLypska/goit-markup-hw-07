@@ -345,6 +345,12 @@ template {
   font-display: swap;
 }
 
+.site-nav-list, .header-address, .section-list-div, .discription-we-do, .social-list, .social-list-items-links, .regular-clients-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -580,6 +586,28 @@ h2 {
   text-decoration: none;
 }
 
+.contact-form-email-f {
+  min-height: 50px;
+  width: 358px;
+  background-color: transparent;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.contact-form-email-f:focus:required:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+}
+
+.contact-form-email-f:focus:required:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+.contact-form-email-f:focus {
+  appearance: none;
+}
+
 .sections {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -616,7 +644,7 @@ h2 {
 }
 
 .logo:hover, .logo:focus {
-  color: accent-clor;
+  color: #2196F3;
 }
 
 .web {
@@ -645,11 +673,6 @@ h2 {
   color: #2196F3;
 }
 
-.site-nav-list {
-  display: flex;
-  align-items: center;
-}
-
 .site-nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -663,11 +686,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-address {
-  display: flex;
-  align-items: center;
 }
 
 .header-address-mail, .header-address-tel {
@@ -707,6 +725,11 @@ h2 {
   width: 100%;
   background: #2196F3;
   border-radius: 2px;
+  position: absolute;
+}
+
+.site-nav-list-item.current {
+  position: relative;
 }
 
 /* Hero */
@@ -771,11 +794,8 @@ h2 {
 .section-list-div {
   height: 120px;
   width: 270px;
-  background-color: var(--secondary-bg-color);
+  background-color: #F5F4FA;
   border-radius: 4%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .discription {
@@ -808,7 +828,6 @@ h2 {
 
 .list-we-do {
   display: flex;
-  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -827,9 +846,6 @@ h2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -842,7 +858,7 @@ h2 {
 
 /*Our Team*/
 .our-team {
-  background-color: var(--secondary-bg-color);
+  background-color: #F5F4FA;
   padding-top: 94px;
 }
 
@@ -869,9 +885,7 @@ h2 {
 }
 
 .social-list {
-  justify-content: center;
   padding-left: 0;
-  display: flex;
   margin-top: 16px;
   padding-bottom: 24px;
 }
@@ -894,7 +908,7 @@ h3 {
 
 .items {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
@@ -907,17 +921,13 @@ h3 {
   height: 44px;
   width: 44px;
   border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   fill: #71778b;
-  /* vertical-align: middle; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-items-links:hover, .social-list-items-links:focus {
   background-color: #2196F3;
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .social-list-items-links-svg {
@@ -939,13 +949,10 @@ h3 {
 }
 
 .regular-clients-links a {
-  display: flex;
   height: 90px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1053,15 +1060,11 @@ footer.logo {
 
 .footer1 {
   margin-right: 70px;
-  /* margin-top: 60px;
-    margin-bottom: 60px; */
 }
 
 .wrapper-f .items {
   display: flex;
   padding-left: 0;
-  /* margin-top: 72px;
-    margin-bottom: 100px; */
 }
 
 .item-f {
@@ -1098,28 +1101,5 @@ footer.logo {
 
 .social-list-items-f.list.Linkedyn {
   background-image: url(../image/inW.svg);
-}
-
-.contact-form-email-f {
-  min-height: 50px;
-  width: 358px;
-  background-color: transparent;
-  padding-left: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-
-.contact-form-email-f:focus:required:valid:not(:placeholder-shown) {
-  border: 1px solid green;
-}
-
-.contact-form-email-f:focus:required:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
-}
-
-.contact-form-email-f:focus {
-  /* outline:none; */
-  appearance: none;
 }
 /*# sourceMappingURL=main.css.map */

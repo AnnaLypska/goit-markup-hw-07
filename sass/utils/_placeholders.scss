@@ -1,9 +1,5 @@
-%fonts-for-nav-links-header-mail-tel{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color:green;
-  padding-top: 32px;
-  padding-bottom: 32px;  
+%align-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

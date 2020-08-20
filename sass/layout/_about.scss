@@ -27,13 +27,11 @@
   }
 
   &-list-div {
+    @extend %align-center;
     height: 120px;
     width: 270px;
-    background-color: var(--secondary-bg-color);
+    background-color: $secondary-bg-color;
     border-radius: 4%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
